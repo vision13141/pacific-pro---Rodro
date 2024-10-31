@@ -20,7 +20,7 @@ const Testimonial = () => {
           />
         </div>
         {/* testimonial card */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-y-10 items-center justify-between">
           <div className="max-w-[370px] py-[50px] px-14 rounded-[10px] shadow-md">
             <div className="flex items-center gap-2 text-yellow-600 text-2xl">
               <CiStar />

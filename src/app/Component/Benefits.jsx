@@ -8,7 +8,7 @@ import benefits5 from "../../assets/benefits-5.png";
 
 const Benefits = () => {
   return (
-    <div className="pb-[100px]">
+    <div className="md:pb-[100px] pb-[50px]">
       <div className="container">
         <div>
           {/* heading */}
@@ -21,7 +21,7 @@ const Benefits = () => {
           />
 
           {/* benefits */}
-          <div className="pt-[48px] flex items-center justify-between flex-wrap">
+          <div className="pt-[48px] gap-y-10 md:flex-row flex-col flex items-center justify-between flex-wrap">
             <Card
               icon={benefits1}
               title={"We’re unbiased"}
@@ -44,7 +44,7 @@ const Benefits = () => {
               }
             />
           </div>
-          <div className="flex items-center justify-center pt-14 gap-x-16">
+          <div className="flex items-center flex-col gap-y-10 md:flex-row justify-center pt-14 gap-x-16">
             <Card
               icon={benefits4}
               title={"We’re availabe 24/7"}

@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <div className="py-[100px]">
       <div className="container">
-        <div className="flex justify-between">
+        <div className="flex flex-col gap-y-5 justify-between">
           <div>
             {/* logo */}
-            <div className="flex items-center gap-x-2">
+            <div className="flex  items-center gap-x-2">
               <Image src={logo} alt="" />
               <span className="font-mulish font-bold text-primary text-[26px]">
                 Pacific Corp.
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           {/* right */}
-          <div className="flex justify-between gap-x-32">
+          <div className="flex flex-col lg:flex-row gap-y-10 justify-between gap-x-32">
             <ul className="flex flex-col gap-y-4">
               <li className="font-openSans font-bold text-primary text-[18px]">
                 Product
@@ -59,7 +59,9 @@ const Footer = () => {
                   key={index}
                   className="font-openSans hover:text-thirdColor hover:underline font-normal text-base text-secondary"
                 >
-                  <a href="#">{item}</a>
+                  <a href="#" className="inline-block">
+                    {item}
+                  </a>
                 </li>
               ))}
             </ul>

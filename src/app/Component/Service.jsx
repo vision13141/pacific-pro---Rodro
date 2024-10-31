@@ -8,12 +8,12 @@ import Card from "./Common/Card";
 
 const Service = () => {
   return (
-    <div className="py-24">
+    <div className="lg:py-24 py-10">
       <div className="container">
         {/* heading */}
         <Heading />
         {/* service */}
-        <div className="pt-[100px] flex items-center justify-between">
+        <div className="lg:pt-[100px] pt-12 flex md:flex-row flex-col gap-y-7 items-center justify-between">
           {/* card */}
           <Card learnmore={true} />
           <Card

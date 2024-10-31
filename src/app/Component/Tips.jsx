@@ -15,7 +15,7 @@ const Tips = () => {
             "We share common trends, strategies ideas, opinion, short & log stories from the team behind company"
           }
         />
-        <div className="pt-12 flex justify-between">
+        <div className="pt-12 flex flex-col gap-y-5 md:flex-row justify-between">
           <div className="max-w-[370px] h-full rounded-xl overflow-hidden">
             <Image src={img1} alt="" className="w-full h-full" />
           </div>
